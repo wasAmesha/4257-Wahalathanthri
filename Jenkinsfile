@@ -2,11 +2,9 @@ pipeline {
     agent any 
     
     stages { 
-        stage('SCM Checkout') {
+        stage('Checkout') {
             steps {
-                retry(3) {
-                    git branch: 'main', url: 'https://github.com/wasAmesha/4257-Wahalathanthri'
-                }
+                git 'https://github.com/wasAmesha/DevOps_App'
             }
         }
         stage('Build Docker Image') {
