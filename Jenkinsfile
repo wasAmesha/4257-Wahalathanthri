@@ -4,7 +4,7 @@ pipeline {
     stages { 
         stage('Checkout') {
             steps {
-                git 'https://github.com/wasAmesha/DevOps_App'
+                git 'https://github.com/wasAmesha/4257-Wahalathanthri'
             }
         }
         stage('Build Docker Image') {
